@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tray>  
+    <action obj="menu_select_gold_type" type="2">
+        <name>选择类型</name>
+        <icon>:/icon/connection.ico</icon>
+        <menu>
+            <group obj="group_select_gold_type" type="3">
+                <select obj="group_Ag_T_D">
+                    <name>Ag(T+D)</name>
+                    <value>25</value>
+                </select>
+                <select obj="group_Au_T_D">
+                    <name>Au(T+D)</name>
+                    <value>26</value>
+                </select>
+                <select obj="group_Au_T_N1">
+                    <name>Au(T+N1)</name>
+                    <value>27</value>
+                </select>
+                <select obj="group_Au_T_N2">
+                    <name>Au(T+N2)</name>
+                    <value>28</value>
+                </select>
+                <select obj="group_Au100g">
+                    <name>Au100g</name>
+                    <value>29</value>
+                </select>
+                <select obj="group_Au9995">
+                    <name>Au99.95</name>
+                    <value>30</value>
+                </select>
+                <select obj="group_Au9999">
+                    <name>Au99.99</name>
+                    <value>31</value>
+                </select>
+                <select obj="group_Pt9995">
+                    <name>Pt99.95</name>
+                    <value>32</value>
+                </select>
+            </group>
+        </menu>
+    </action>    
+    <separator>
+    </separator>
+    <action obj="menu_set_top"  type="1" def="1">
+        <name>总是置顶</name>
+        <icon>:/icon/pin.ico</icon>
+        <value>2</value>
+    </action>
+    <action obj="menu_set_mouse_penetration" type="1" def="0">
+        <name>鼠标穿透</name>
+        <icon>:/icon/mouse.ico</icon>
+        <value>3</value>
+    </action>
+    <action obj="menu_set_lock_win_pos" type="1" def="0">
+        <name>锁定窗口位置</name>
+        <icon>:/icon/lock.ico</icon>
+        <value>4</value>
+    </action>
+    <action obj="menu_other_fun_screen_border" type="1" def="0">
+        <name>允许超出屏幕边界</name>
+        <value>14</value>
+    </action>
+    <action obj="menu_show_more_info" type="1" def="1">
+        <name>显示更多信息</name>
+        <icon>:/icon/more.ico</icon>
+        <value>5</value>
+    </action>
+    <action obj="menu_show_main_win" type="1" def="1">
+        <name>显示主窗口</name>
+        <icon>:/icon/main_window.ico</icon>
+        <value>7</value>
+    </action>
+    <action obj="menu_set_win_opaqueness" type="2">
+        <name>窗口不透明度</name>
+        <icon>:/icon/traffic.png</icon>
+        <menu>
+            <group obj="group_set_win_alpha" type="3" def="0">
+                <cfg>group_win_alpha</cfg>
+                <select obj="group_win_alpha_100">
+                    <name>100%</name>
+                    <value>8</value>
+                </select>
+                <select obj="group_win_alpha_80">
+                    <name>80%</name>
+                    <value>9</value>
+                </select>
+                <select obj="group_win_alpha_60">
+                    <name>60%</name>
+                    <value>10</value>
+                </select>
+                <select obj="group_win_alpha_40">
+                    <name>40%</name>
+                    <value>11</value>
+                </select>
+            </group>
+        </menu>
+    </action>
+    <action obj="menu_exit">
+        <name>退出</name>
+        <icon>:/icon/exit.ico</icon>
+        <value>23</value>
+    </action>
+</tray>

@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Menuformat.xml</file>
+        <file>icon/close.ico</file>
+        <file>icon/connection.ico</file>
+        <file>icon/exit.ico</file>
+        <file>icon/function.ico</file>
+        <file>icon/help.ico</file>
+        <file>icon/info.ico</file>
+        <file>icon/item.ico</file>
+        <file>icon/lock.ico</file>
+        <file>icon/main_window.ico</file>
+        <file>icon/more.ico</file>
+        <file>icon/mouse.ico</file>
+        <file>icon/notify.ico</file>
+        <file>icon/notifyicon.ico</file>
+        <file>icon/pin.ico</file>
+        <file>icon/plugins.ico</file>
+        <file>icon/setting.ico</file>
+        <file>icon/skn.ico</file>
+        <file>icon/statistics.ico</file>
+        <file>icon/task_manager.ico</file>
+        <file>icon/taskbar_window.ico</file>
+    </qresource>
+</RCC>

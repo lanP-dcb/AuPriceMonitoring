@@ -21,18 +21,17 @@ void MonitorThread::run()
         m_timer->stop();
 
         QEventLoop loop;
-        QNetworkAccessManager m_manager;
-        connect(&m_manager,&QNetworkAccessManager::finished, &loop, &QEventLoop::quit);
-
         QTimer http_timeout;
         connect(&http_timeout,&QTimer::timeout,&loop,&QEventLoop::quit);
-        http_timeout.setInterval(10000);
+
+        QNetworkAccessManager m_manager;
+        connect(&m_manager,&QNetworkAccessManager::finished, &loop, &QEventLoop::quit);
 
         QNetworkRequest m_request;
         m_request.setHeader(QNetworkRequest::ContentTypeHeader,"application/json;charset=UTF-8");
         m_request.setUrl(QUrl("https://m.cmbchina.com/api/rate/gold"));
 
-        http_timeout.start();
+        http_timeout.start(10000);
         QNetworkReply *m_reply = m_manager.get(m_request);
         loop.exec();
 
@@ -44,7 +43,7 @@ void MonitorThread::run()
         } else {
             emit MonitorResultSignal(0, m_reply->readAll());
         }
-        m_timer->start(60000);
+        m_timer->start(60000); // 1分钟刷新一次
     });
     m_timer->start(1000);
     exec();
