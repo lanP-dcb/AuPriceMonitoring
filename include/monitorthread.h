@@ -7,6 +7,7 @@
 #include <QHttpPart>
 #include <QNetworkAccessManager>
 #include <QEventLoop>
+#include "configmanagement.h"
 
 class MonitorThread : public QThread
 {

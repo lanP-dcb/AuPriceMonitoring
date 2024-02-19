@@ -2,9 +2,10 @@
 <tray>  
     <action obj="menu_select_gold_type" type="2">
         <name>选择类型</name>
-        <icon>:/icon/connection.ico</icon>
+        <icon>:/icon/gold.png</icon>
         <menu>
-            <group obj="group_select_gold_type" type="3">
+            <group obj="group_select_gold_type" type="3" def="0">
+                <cfg>group_gold_type</cfg>
                 <select obj="group_Ag_T_D">
                     <name>Ag(T+D)</name>
                     <value>25</value>
@@ -48,7 +49,7 @@
         <value>2</value>
     </action>
     <action obj="menu_set_mouse_penetration" type="1" def="0">
-        <name>鼠标穿透</name>
+        <name>鼠标穿透(重启生效)</name>
         <icon>:/icon/mouse.ico</icon>
         <value>3</value>
     </action>

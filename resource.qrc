@@ -2,7 +2,6 @@
     <qresource prefix="/">
         <file>Menuformat.xml</file>
         <file>icon/close.ico</file>
-        <file>icon/connection.ico</file>
         <file>icon/exit.ico</file>
         <file>icon/function.ico</file>
         <file>icon/help.ico</file>
@@ -17,9 +16,9 @@
         <file>icon/pin.ico</file>
         <file>icon/plugins.ico</file>
         <file>icon/setting.ico</file>
-        <file>icon/skn.ico</file>
         <file>icon/statistics.ico</file>
         <file>icon/task_manager.ico</file>
         <file>icon/taskbar_window.ico</file>
+        <file>icon/gold.png</file>
     </qresource>
 </RCC>

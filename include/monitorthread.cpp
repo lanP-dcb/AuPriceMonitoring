@@ -5,6 +5,8 @@
 MonitorThread::MonitorThread()
 {
     moveToThread(this);
+    DEBUG(QSslSocket::sslLibraryBuildVersionString());
+    DEBUG(QSslSocket::supportsSsl());
 }
 
 MonitorThread::~MonitorThread()

@@ -1,4 +1,4 @@
-#include "mainmonitorwin.h"
+﻿#include "mainmonitorwin.h"
 
 
 
@@ -217,11 +217,11 @@ void MainMonitorWin::MonitorResultSlot(int type, QByteArray byt)
         map.insert("low",obj.value("low").toString());              // 最低价
         map.insert("avePrice",obj.value("avePrice").toString());    // 平均价
         map.insert("tradeCount",obj.value("tradeCount").toString());// 成交量
-        //        map.insert("time",obj.value("time").toString());            // 时间
-        //        map.insert("goldNo",obj.value("goldNo").toString());        // 代号
+        map.insert("time",obj.value("time").toString());            // 时间
+//        map.insert("goldNo",obj.value("goldNo").toString());        // 代号
         m_AuMapList.append(map);
     }
-    time->setText(body.value("time").toString());
+    errMsg->setText(body.value("time").toString());
     UpdateGoldPrice();
 }
 
@@ -243,6 +243,8 @@ void MainMonitorWin::UpdateGoldPrice()
         upDown->setText(map.value("upDown").toString());
         high->setText(map.value("high").toString());
         low->setText(map.value("low").toString());
+        time->setText(map.value("time").toString());
+        time->setToolTip(QObject::tr("最后更新时间"));
         break;
     }
 }
